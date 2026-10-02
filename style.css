@@ -1,1 +1,141 @@
 
+
+/* Diseño especial para mamá 💗 */
+
+:root {
+    --rosa: #e879a6;
+    --rosa-oscuro: #b84373;
+    --rosa-claro: #fff0f6;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(
+        135deg, #fff0f6, #ffe0eb, #fff8fb
+    );
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #704458;
+}
+
+/* Barra de navegación */
+.navbar {
+    background: linear-gradient(
+        90deg, #e879a6, #c95486
+    ) !important;
+    box-shadow: 0 4px 18px #e879a650;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background: #ffffff40;
+    transform: translateY(-3px);
+}
+
+.nav-link.active {
+    background: white;
+    color: #b84373 !important;
+}
+
+/* Título */
+.hero {
+    padding: 35px 15px;
+    animation: aparecer 1.2s ease;
+}
+
+.hero h1 {
+    color: #b84373;
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-shadow: 2px 3px 8px #f7b4cf;
+}
+
+.hero p {
+    color: #9e6680;
+}
+
+/* Decoración */
+.hero::before {
+    content: "🌸 💗 🌷 💗 🌸";
+    display: block;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.hero::after {
+    content: "♡ ♡ ♡";
+    display: block;
+    color: #e879a6;
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+/* Tarjeta del video */
+.video-card {
+    background: #ffffffed;
+    border-radius: 25px;
+    border: 2px solid #ffd0e2;
+    border-top: 5px solid #e879a6;
+    box-shadow: 0 10px 30px #d66a9833;
+    transition: 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px #d66a9850;
+}
+
+.video-title {
+    color: #b84373;
+}
+
+.video-container {
+    border-radius: 18px;
+}
+
+/* Pie de página */
+footer {
+    background: linear-gradient(
+        90deg, #c95486, #e879a6
+    );
+    color: white;
+    border-top: 3px solid #ffd0e2;
+}
+
+/* Animación */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+    .hero {
+        padding: 20px 10px;
+    }
+
+    .video-card {
+        padding: 15px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
