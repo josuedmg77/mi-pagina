@@ -138,4 +138,21 @@ footer {
         animation: none !important;
         transition: none !important;
     }
+    /* FOTO DE MAMÁ 💗 */
+
+.foto-mama {
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto 0;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 5px solid #ffd0e2;
+    box-shadow: 0 10px 30px rgba(216, 92, 139, 0.25);
+}
+
+.foto-mama img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 }
