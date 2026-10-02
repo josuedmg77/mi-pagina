@@ -1,46 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Tarjetas | Para mi mamita 💗</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
-        <div class="container-fluid">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="columnas.html">Columnas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="tarjetas.html">tarjetas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <section>
-        <div class="card">
-            <div class="card-header">Bryant DMG</div>
-            <div class="card-body">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjn9F4C3XCM4b7iQUbbhKgYIYy9pM8rN5gnZPlXXQvxrBQAIYQFDHi4b8&s=10" alt="guts" width="50%">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-house-heart-fill"></i>
+                Para mi mamita 💗
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-fill"></i>
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="columnas.html">
+                            <i class="bi bi-layout-three-columns"></i>
+                            Columnas
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tarjetas.html">
+                            <i class="bi bi-grid-3x3-gap-fill"></i>
+                            Tarjetas
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">
+                            <i class="bi bi-lock-fill"></i>
+                            Próximamente
+                        </a>
+                    </li>
+
+                </ul>
+
             </div>
-            <div class="card-footer">Es un jugador de Basquet</div>
+
         </div>
-        <h1>MENSAJE</h1>
-    </section>
+
+    </nav>
+
+
+    <!-- CONTENIDO -->
+
+    <main class="contenido">
+
+        <section class="hero">
+
+            <h1>💗 Un pequeño detalle para ti 💗</h1>
+
+            <p>
+                Algunas cosas que quiero decirte, mamita. 🌷
+            </p>
+
+        </section>
+
+
+        <!-- TARJETAS -->
+
+        <div class="row g-4 justify-content-center">
+
+
+            <!-- TARJETA 1 -->
+
+            <div class="col-sm-6 col-lg-4">
+
+                <div class="card tarjeta-mama h-100">
+
+                    <div class="card-header">
+                        🌷 Para mi mamá
+                    </div>
+
+                    <div class="card-body text-center">
+
+                        <div class="icono-tarjeta">
+                            ❤️
+                        </div>
+
+                        <h3 class="card-title">
+                            La mejor mamá
+                        </h3>
+
+                        <p class="card-text">
+                            Gracias por estar conmigo y por todo
+                            el cariño que me has dado durante mi vida.
+                        </p>
+
+                    </div>
+
+                    <div class="card-footer">
+                        💕 Con mucho amor
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TARJETA 2 -->
+
+            <div class="col-sm-6 col-lg-4">
+
+                <div class="card tarjeta-mama h-100">
+
+                    <div class="card-header">
+                        🌸 Gracias
+                    </div>
+
+                    <div class="card-body text-center">
+
+                        <div class="icono-tarjeta">
+                            🥰
+                        </div>
+
+                        <h3 class="card-title">
+                            Gracias por todo
+                        </h3>
+
+                        <p class="card-text">
+                            Gracias por tus consejos, por cuidarme
+                            y por apoyarme en cada momento.
+                        </p>
+
+                    </div>
+
+                    <div class="card-footer">
+                        🌹 Nunca lo olvidaré
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TARJETA 3 -->
+
+            <div class="col-sm-6 col-lg-4">
+
+                <div class="card tarjeta-mama h-100">
+
+                    <div class="card-header">
+                        💐 Un recuerdo
+                    </div>
+
+                    <div class="card-body text-center">
+
+                        <div class="icono-tarjeta">
+                            💗
+                        </div>
+
+                        <h3 class="card-title">
+                            Momentos especiales
+                        </h3>
+
+                        <p class="card-text">
+                            Cada momento que compartimos es
+                            un recuerdo que siempre voy a guardar.
+                        </p>
+
+                    </div>
+
+                    <div class="card-footer">
+                        🌸 Siempre en mi corazón
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- MENSAJE FINAL -->
+
+        <section class="mensaje-mama">
+
+            <h2>💗 Mamá, te quiero muchísimo 💗</h2>
+
+            <p>
+                Puede que esta página sea pequeña,
+                pero está hecha con muchísimo cariño.
+            </p>
+
+            <p>
+                🌷 Gracias por ser mi mamá. 🌷
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            🌸 Hecho con mucho cariño para mi mamita ❤️
+        </p>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
-<!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
